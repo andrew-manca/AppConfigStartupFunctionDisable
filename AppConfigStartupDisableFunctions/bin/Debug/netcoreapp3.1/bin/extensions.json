@@ -1,0 +1,5 @@
+{
+  "extensions":[
+    { "name": "Startup", "typeName":"AppConfigStartupDisableFunctions.Startup, AppConfigStartupDisableFunctions, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"}
+  ]
+}
