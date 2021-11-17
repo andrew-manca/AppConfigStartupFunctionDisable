@@ -10,7 +10,7 @@ namespace AppConfigStartupDisableFunctions
     {
         public override void ConfigureAppConfiguration(IFunctionsConfigurationBuilder builder)
         {
-            string connectionString = "{AppConfigConnString}";
+            string connectionString = Environment.GetEnvironmentVariable("AppConfigConnectionString");//"{AppConfigConnString}";
             builder.ConfigurationBuilder.AddAzureAppConfiguration(connectionString);
         }
 
