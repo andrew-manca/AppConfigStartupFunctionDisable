@@ -40,6 +40,6 @@ stages:
               azureSubscription: 'anmanca internal subscription (43c4fce3-91d3-4498-9282-275f49cdd065)'
               scriptType: 'bash'
               scriptLocation: 'inlineScript'
-              inlineScript: '|
-              az login 
-              az functionapp deployment source config --verbose --debug -g  amancaRG -n  amancaFunctionApp --repo-url https://github.com/andrew-manca/AppConfigStartupFunctionDisable'
+              inlineScript: |
+                az login 
+                az functionapp deployment source config --verbose --debug -g  amancaRG -n  amancaFunctionApp --repo-url https://github.com/andrew-manca/AppConfigStartupFunctionDisable
